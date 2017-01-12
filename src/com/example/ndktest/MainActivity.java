@@ -39,8 +39,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 				// TODO Auto-generated method stub
-				ta.setText(Integer.toString(progress));
-				sum.setText(Integer.toString(adder(progress,sb.getProgress())));
+				ta.setText("A = " + Integer.toString(progress));
+				sum.setText("A + B = " + Integer.toString(adder(progress,sb.getProgress())));
 			}
 		});
 		
@@ -61,8 +61,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 				// TODO Auto-generated method stub
-				tb.setText(Integer.toString(progress));
-				sum.setText(Integer.toString(adder(progress, sa.getProgress())));
+				tb.setText("B = " + Integer.toString(progress));
+				sum.setText("A + B = " + Integer.toString(adder(progress, sa.getProgress())));
 			}
 		});
 	}
